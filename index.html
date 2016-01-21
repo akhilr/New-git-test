@@ -9,10 +9,10 @@
   {
     margin:0;
     padding:0;
-    background-color:#000;
+    background-color:#ebebeb;
   }
 
-  h1
+  #change
   {
     color:orange;
     font-family: "Montserrat", sans-serif;
@@ -40,10 +40,23 @@
   }
 </style>
 </head>
-  <body>
-    <div id="box"><h1>Version control for the whole family.</h1></div>
+  <body onload="change1()">
+    <div id="box"><h1 id="change">Version control for the whole family.</h1></div>
 
 
 
+<script>
+
+
+
+
+  setTimeout(function change1(){
+
+
+    document.getElementById("h1").innerHTML="Because we are the shizz.";
+
+  },3000);
+
+</script>
 </body>
 <html>
